@@ -1,0 +1,38 @@
+nextflex_hg38:
+	bash map_reads/NEXTflex_pipeline.sh /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mir124-rep1/mir124-rep1.fastq /nfs/genomes/human_hg38_dec13_no_random/STAR/GRCh38.81.canonical_overhang_100/ /lab/solexa_bartel/klin/RNA_Seq/annotations/sorted_exon_coordinates_basic.bed /lab/solexa_bartel/klin/RNA_Seq/annotations/sorted_intron_coordinates_basic.bed /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mir124-rep1 \
+	& bash map_reads/NEXTflex_pipeline.sh /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mir124-rep2/mir124-rep2.fastq /nfs/genomes/human_hg38_dec13_no_random/STAR/GRCh38.81.canonical_overhang_100/ /lab/solexa_bartel/klin/RNA_Seq/annotations/sorted_exon_coordinates_basic.bed /lab/solexa_bartel/klin/RNA_Seq/annotations/sorted_intron_coordinates_basic.bed /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mir124-rep2 \
+	& bash map_reads/NEXTflex_pipeline.sh /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mir155-rep1/mir155-rep1.fastq /nfs/genomes/human_hg38_dec13_no_random/STAR/GRCh38.81.canonical_overhang_100/ /lab/solexa_bartel/klin/RNA_Seq/annotations/sorted_exon_coordinates_basic.bed /lab/solexa_bartel/klin/RNA_Seq/annotations/sorted_intron_coordinates_basic.bed /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mir155-rep1 \
+	& bash map_reads/NEXTflex_pipeline.sh /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mir155-rep2/mir155-rep2.fastq /nfs/genomes/human_hg38_dec13_no_random/STAR/GRCh38.81.canonical_overhang_100/ /lab/solexa_bartel/klin/RNA_Seq/annotations/sorted_exon_coordinates_basic.bed /lab/solexa_bartel/klin/RNA_Seq/annotations/sorted_intron_coordinates_basic.bed /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mir155-rep2 \
+	& bash map_reads/NEXTflex_pipeline.sh /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mock-rep1/mock-rep1.fastq /nfs/genomes/human_hg38_dec13_no_random/STAR/GRCh38.81.canonical_overhang_100/ /lab/solexa_bartel/klin/RNA_Seq/annotations/sorted_exon_coordinates_basic.bed /lab/solexa_bartel/klin/RNA_Seq/annotations/sorted_intron_coordinates_basic.bed /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mock-rep1 \
+	& bash map_reads/NEXTflex_pipeline.sh /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mock-rep2/mock-rep2.fastq /nfs/genomes/human_hg38_dec13_no_random/STAR/GRCh38.81.canonical_overhang_100/ /lab/solexa_bartel/klin/RNA_Seq/annotations/sorted_exon_coordinates_basic.bed /lab/solexa_bartel/klin/RNA_Seq/annotations/sorted_intron_coordinates_basic.bed /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mock-rep2 \
+
+nextflex_hg19:
+	bash map_reads/NEXTflex_pipeline.sh /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mir124-rep1/mir124-rep1.fastq /lab/solexa_bartel/agarwal/databases/STAR_hg19/ /lab/solexa_bartel/klin/RNA_Seq/annotations/hg19/exon_coordinates_hg19_sorted.bed /lab/solexa_bartel/klin/RNA_Seq/annotations/hg19/intron_coordinates_hg19_sorted.bed /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mir124-rep1 \
+	& bash map_reads/NEXTflex_pipeline.sh /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mir124-rep2/mir124-rep2.fastq /lab/solexa_bartel/agarwal/databases/STAR_hg19/ /lab/solexa_bartel/klin/RNA_Seq/annotations/hg19/exon_coordinates_hg19_sorted.bed /lab/solexa_bartel/klin/RNA_Seq/annotations/hg19/intron_coordinates_hg19_sorted.bed /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mir124-rep2 \
+	& bash map_reads/NEXTflex_pipeline.sh /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mir155-rep1/mir155-rep1.fastq /lab/solexa_bartel/agarwal/databases/STAR_hg19/ /lab/solexa_bartel/klin/RNA_Seq/annotations/hg19/exon_coordinates_hg19_sorted.bed /lab/solexa_bartel/klin/RNA_Seq/annotations/hg19/intron_coordinates_hg19_sorted.bed /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mir155-rep1 \
+	& bash map_reads/NEXTflex_pipeline.sh /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mir155-rep2/mir155-rep2.fastq /lab/solexa_bartel/agarwal/databases/STAR_hg19/ /lab/solexa_bartel/klin/RNA_Seq/annotations/hg19/exon_coordinates_hg19_sorted.bed /lab/solexa_bartel/klin/RNA_Seq/annotations/hg19/intron_coordinates_hg19_sorted.bed /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mir155-rep2 \
+	& bash map_reads/NEXTflex_pipeline.sh /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mock-rep1/mock-rep1.fastq /lab/solexa_bartel/agarwal/databases/STAR_hg19/ /lab/solexa_bartel/klin/RNA_Seq/annotations/hg19/exon_coordinates_hg19_sorted.bed /lab/solexa_bartel/klin/RNA_Seq/annotations/hg19/intron_coordinates_hg19_sorted.bed /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mock-rep1 \
+	& bash map_reads/NEXTflex_pipeline.sh /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mock-rep2/mock-rep2.fastq /lab/solexa_bartel/agarwal/databases/STAR_hg19/ /lab/solexa_bartel/klin/RNA_Seq/annotations/hg19/exon_coordinates_hg19_sorted.bed /lab/solexa_bartel/klin/RNA_Seq/annotations/hg19/intron_coordinates_hg19_sorted.bed /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mock-rep2 \
+
+testing:
+	bash map_reads/NEXTflex_pipeline.sh /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mini_fastq/mir_124_rep1_mini/mir_124_rep1_mini.fastq /nfs/genomes/human_hg38_dec13_no_random/STAR/GRCh38.81.canonical_overhang_100/ /lab/solexa_bartel/klin/RNA_Seq/annotations/raw_exon_coordinates.bed /lab/solexa_bartel/klin/RNA_Seq/annotations/raw_intron_coordinates.bed /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mini_fastq/mir_124_rep1_mini
+
+mir124:
+	bash map_reads/NEXTflex_pipeline.sh /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mir_124_rep1/mir_124_rep1.fastq /nfs/genomes/human_hg38_dec13_no_random/STAR/GRCh38.81.canonical_overhang_100/ /lab/solexa_bartel/klin/RNA_Seq/annotations/raw_exon_coordinates.bed /lab/solexa_bartel/klin/RNA_Seq/annotations/raw_intron_coordinates.bed /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mir_124_rep1
+
+test_with_tim_data:
+	bash map_reads/NEXTflex_pipeline.sh /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mini_fastq/tiny_tim.fastq /lab/solexa_bartel/agarwal/databases/STAR_hg19/ /lab/solexa_bartel/teisen/RNAseq/coffee/se_rpf_16_09_14/RFP_trim_bed_sorted_all_exons.txt /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/tim_pipeline/tiny_tim_bed_sorted.txt /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/test_tim
+
+test_tim:
+	bash map_reads/NEXTflex_tim.sh -1 /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mini_fastq/tiny_tim.fastq -s /lab/solexa_bartel/agarwal/databases/STAR_hg19/ -b /lab/solexa_bartel/teisen/RNAseq/coffee/se_rpf_16_09_14/RFP_trim_bed_sorted_all_exons.txt -d /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/tim_pipeline/
+
+blahblah:
+# blah
+	cd calculate_exp_changes/
+
+exp_changes:
+# python calculate_exp_changes/calculate_exp_changes.py ../data/Gene_info.txt /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mir_124/ AAGGCAC ../data/UTR_Sequences_Ensembl_Human.txt ../outfiles/mir_124.txt
+	cd calculate_exp_changes/ && python calculate_exp_changes.py /lab/solexa_bartel/klin/RNA_Seq/annotations/ensembl_transcript_info_GRCh38_p3.txt /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mir_155/ UAAUGCU ../../data/UTR_Sequences_Ensembl_Human.txt ../../outfiles/mir_155.txt
+
+blah:
+	bash map_reads/NEXTflex_pipeline.sh /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mir_124_rep2/mir_124_rep2.fastq /nfs/genomes/human_hg38_dec13_no_random/STAR/GRCh38.81.canonical_overhang_100/ /lab/solexa_bartel/klin/RNA_Seq/annotations/sorted_exon_coordinates.bed /lab/solexa_bartel/klin/RNA_Seq/annotations/sorted_intron_coordinates.bed /lab/solexa_bartel/klin/RNA_Seq/Nam_HEK_transfections/mir_124_rep2
