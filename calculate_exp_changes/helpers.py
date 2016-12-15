@@ -24,7 +24,14 @@ def rev_comp(seq):
 
 def get_site_info(utr_file, seed):
     """
-    Given a utr file and seed, find all genes with a seed match in the 3'utr
+    Parameters:
+    ==========
+    utr_file: string, name of file with utr sequences
+    seed: string, seed+m8 of a miRNA
+
+    Returns:
+    =======
+    pandas dataframe: table of all genes and how many seed matches are in the UTR
     """
     SITE = rev_comp(seed)
     SIXMER = SITE[1:]
@@ -38,8 +45,6 @@ def get_site_info(utr_file, seed):
     print len(UTRS)
     UTRS = UTRS.groupby('Gene ID').first()
     print len(UTRS)
-    # .set_index('Gene ID')
-    # UTRS.to_csv('../../data/mir_data/{}_data.txt'.format(mir_name),sep='\t')
 
     return UTRS
 

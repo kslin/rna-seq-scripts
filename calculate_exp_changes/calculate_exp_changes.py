@@ -43,7 +43,7 @@ if __name__ == '__main__':
     print len(count_data)
     count_data = pd.concat([count_data, gene_data], axis=1, join='inner')
     print len(count_data)
-    count_data = count_data.reset_index().drop(['index', 'EntrezGene ID'], 1).groupby('Ensembl Gene ID').agg(np.nansum)
+    count_data = count_data.reset_index().drop(['index'], 1).groupby('Ensembl Gene ID').agg(np.nansum)
     print len(count_data)
 
     # print count_data.head()
